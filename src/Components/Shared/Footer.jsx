@@ -1,4 +1,8 @@
 const Footer = () => {
+    const date = new Date();
+    const year= date.getFullYear();
+    console.log(year);
+    console.log(date);
   return (
     <footer className="footer bg-neutral text-neutral-content p-10">
       <aside>
@@ -57,6 +61,11 @@ const Footer = () => {
           </a>
         </div>
       </nav>
+      <aside className="text-base-200 mt-6 md:mt-16">
+   
+     <p>{`Copyright © ${year} - All right reserved by ACME Industries Ltd`}</p>
+   
+  </aside>
     </footer>
   );
 };
