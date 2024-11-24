@@ -4,7 +4,7 @@ const Footer = () => {
     console.log(year);
     console.log(date);
   return (
-    <footer className="footer bg-neutral text-neutral-content p-10">
+    <footer className="footer bg-neutral text-neutral-content p-10 rounded-sm">
       <aside>
         <svg
           width="50"
