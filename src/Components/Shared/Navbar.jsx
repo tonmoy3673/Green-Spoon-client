@@ -1,15 +1,16 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const navItems = (
     <>
-      <li>Item 1</li>
-      <li>Parent</li>
-      <li>Item 3</li>
+      <NavLink className='hover:text-amber-500 me-0 md:me-6'>Home</NavLink>
+      <NavLink className='hover:text-amber-500 me-0 md:me-6'>Contact Us</NavLink>
+      <NavLink className='hover:text-amber-500 me-0 md:me-6'>Our Menu</NavLink>
+      <NavLink className='hover:text-amber-500 me-0 md:me-6'>Our Shop</NavLink>
     </>
   );
   return (
-    <div className="navbar bg-base-100 py-2 md:py-6">
+    <div className="navbar  fixed z-10 bg-opacity-30 max-w-screen-xl bg-black">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -30,7 +31,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            className="menu menu-sm dropdown-content text-white rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
 
             {navItems}
@@ -38,14 +39,12 @@ const Navbar = () => {
         </div>
         <Link to='/' className=" text-2xl font-bold text-green-600  italic">Green <span className="text-yellow-600 font-bold capitalize">Spoon</span></Link>
       </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+      <div className="navbar-end hidden lg:flex px-6">
+        <ul className="menu menu-horizontal px-1 text-white text-base ">
          {navItems}
         </ul>
       </div>
-      <div className="navbar-end">
-        <a className="btn">Button</a>
-      </div>
+     
     </div>
   );
 };
