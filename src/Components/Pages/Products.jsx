@@ -1,5 +1,9 @@
-
-
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/pagination';
+import { FreeMode, Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import './styles.css';
 const Products = () => {
 
     const products =[
@@ -26,6 +30,28 @@ const Products = () => {
     return (
         <div>
             <h2>{products.length}</h2>
+            <div>
+            <Swiper
+        slidesPerView={3}
+        spaceBetween={30}
+        freeMode={true}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[FreeMode, Pagination]}
+        className="mySwiper"
+      >
+        {
+            products && products.map((product)=>
+               <>
+                <SwiperSlide>
+                    <img src={product.img}/>
+                </SwiperSlide>
+               </>
+            )
+        }
+      </Swiper>
+            </div>
         </div>
     );
 };
