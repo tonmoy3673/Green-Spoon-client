@@ -1,7 +1,7 @@
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
-import { FreeMode, Pagination } from 'swiper/modules';
+import { Autoplay, FreeMode, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import slide1 from '../../assets/images/home/slide1.jpg';
 import slide2 from '../../assets/images/home/slide2.jpg';
@@ -11,7 +11,29 @@ import slide5 from '../../assets/images/home/slide5.jpg';
 
 
 import './styles.css';
+
+
 const Products = () => {
+
+    const breakpoints={
+        0:{
+            slidesPerView:1,
+            spaceBetween:10
+        },
+       640: {
+            slidesPerView:2,
+            spaceBetween:20
+        },
+        768:{
+            slidesPerView:3,
+            spaceBetween:30
+        },
+        1024:{
+            slidesPerView:4,
+            spaceBetween:40
+        }
+    }
+    
 
     const products =[
         
@@ -32,21 +54,36 @@ const Products = () => {
         {
             name:'Deserts',
              img:slide5
+        },{
+            name:'Salad',
+             img:slide3
+        },
+        {
+            name:'Pizzas',
+             img:slide4
+        },
+        {
+            name:'Deserts',
+             img:slide5
         }
     ]
     return (
         <div>
-            <h2>{products.length}</h2>
+            <p className='italic text-center text-sm text-amber-500 py-6'>---From 11:00 AM to 10:00 PM---</p>
+            <h2 className='mb-3 md:mb-8 text-center text-2xl text-green-500 font-semibold'>Order Online</h2>
             <div>
             <Swiper
-        slidesPerView={3}
-        spaceBetween={30}
+       breakpoints={breakpoints}
         freeMode={true}
+        autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
         pagination={{
           clickable: true,
         }}
-        modules={[FreeMode, Pagination]}
-        className="mySwiper"
+        modules={[Autoplay,FreeMode, Pagination]}
+        className="mySwiper mb-6 md:mb-16"
       >
         {
             products && products.map((product,i)=>
