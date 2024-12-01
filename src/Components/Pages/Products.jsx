@@ -69,8 +69,8 @@ const Products = () => {
     ]
     return (
         <div>
-            <p className='italic text-center text-sm text-amber-500 py-6'>---From 11:00 AM to 10:00 PM---</p>
-            <h2 className='mb-3 md:mb-8 text-center text-2xl text-green-500 font-semibold'>Order Online</h2>
+            <p className=''>---From 11:00 AM to 10:00 PM---</p>
+            <h2 className=''>Order Online</h2>
             <div>
             <Swiper
        breakpoints={breakpoints}
