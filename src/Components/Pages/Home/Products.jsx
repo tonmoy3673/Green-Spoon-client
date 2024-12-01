@@ -3,15 +3,15 @@ import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import { Autoplay, FreeMode, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import slide1 from '../../assets/images/home/slide1.jpg';
-import slide2 from '../../assets/images/home/slide2.jpg';
-import slide3 from '../../assets/images/home/slide3.jpg';
-import slide4 from '../../assets/images/home/slide4.jpg';
-import slide5 from '../../assets/images/home/slide5.jpg';
+import slide1 from '../../../assets/images/home/slide1.jpg';
+import slide2 from '../../../assets/images/home/slide2.jpg';
+import slide3 from '../../../assets/images/home/slide3.jpg';
+import slide4 from '../../../assets/images/home/slide4.jpg';
+import slide5 from '../../../assets/images/home/slide5.jpg';
 
 
-import SectionTitle from '../../assets/images/SectionTitle/SectionTitle';
-import './styles.css';
+import SectionTitle from '../../../assets/images/SectionTitle/SectionTitle';
+import '../styles.css';
 
 
 const Products = () => {
