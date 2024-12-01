@@ -10,6 +10,7 @@ import slide4 from '../../assets/images/home/slide4.jpg';
 import slide5 from '../../assets/images/home/slide5.jpg';
 
 
+import SectionTitle from '../../assets/images/SectionTitle/SectionTitle';
 import './styles.css';
 
 
@@ -69,8 +70,7 @@ const Products = () => {
     ]
     return (
         <div>
-            <p className=''>---From 11:00 AM to 10:00 PM---</p>
-            <h2 className=''>Order Online</h2>
+            <SectionTitle subTitle={'----- From 11:00 AM to 10:00 PM -----'} title={'Order Online'}/>
             <div>
             <Swiper
        breakpoints={breakpoints}
