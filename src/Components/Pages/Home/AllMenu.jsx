@@ -8,7 +8,7 @@ const AllMenu =()=>{
                 <SectionTitle subTitle={'----- Check it Out -----'} title={'From Our Menu'}/>
             </div>
             {/* ============= Menu Section ========== */}
-
+                
         </div>
     )
 };
