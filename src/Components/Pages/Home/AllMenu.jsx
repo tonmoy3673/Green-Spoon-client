@@ -17,7 +17,7 @@ const AllMenu =()=>{
             </div>
             <h2>All Menu : {menu.length}</h2>
             {/* ============= Menu Section ========== */}
-                <div>
+                <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 md:gap-16">
                     {
                     menu && menu.map((menu)=><Menu key={menu._id} menu={menu}/>)
                     }
