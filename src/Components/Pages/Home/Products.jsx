@@ -90,8 +90,10 @@ const Products = () => {
                (
                 
                 <SwiperSlide key={i}>
+                    <div className='w-1/2 md:w-full mx-auto md:mx-0'>
                     <img src={product?.img}/>
                     <p className='-mt-8 md:-mt-20 pb-2 text-2xl text-white'>{product?.name}</p>
+                    </div>
                 </SwiperSlide>
                
                )
