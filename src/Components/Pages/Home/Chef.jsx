@@ -1,6 +1,11 @@
+import './Chef.css';
 const Chef =()=>{
     return (
-        <div></div>
+        <div className="py-8 md:py-16 bg">
+            <section>
+
+            </section>
+        </div>
     )
 };
 
