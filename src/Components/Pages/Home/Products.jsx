@@ -70,7 +70,7 @@ const Products = () => {
     ]
     return (
         <div>
-            <SectionTitle subTitle={'----- From 11:00 AM to 10:00 PM -----'} title={'Order Online'}/>
+            <SectionTitle subTitle={'From 11:00 AM to 10:00 PM'} title={'Order Online'}/>
             <div>
             <Swiper
        breakpoints={breakpoints}

@@ -17,7 +17,7 @@ const AllMenu =()=>{
     return(
         <div className="mb-6 md:mb-16">
             <div>
-                <SectionTitle subTitle={'----- Check it Out -----'} title={'From Our Menu'}/>
+                <SectionTitle subTitle={'Check it Out'} title={'From Our Menu'}/>
             </div>
             <h2>All Menu : {menu.length}</h2>
             {/* ============= Menu Section ========== */}
