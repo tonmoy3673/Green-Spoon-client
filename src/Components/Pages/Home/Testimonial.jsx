@@ -1,14 +1,17 @@
-import Swiper from "swiper";
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { Mousewheel, Pagination } from "swiper/modules";
-import { SwiperSlide } from "swiper/react";
+import { Keyboard, Mousewheel, Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SectionTitle from '../../../assets/images/SectionTitle/SectionTitle';
 
-import './styles.css';
+
 const Testimonial =()=>{
+
     return (
         <div>
+            <SectionTitle subTitle={'What Our Clients Say'} title={'TESTIMONIALS'}/>
              <>
       <Swiper
         cssMode={true}
@@ -25,9 +28,6 @@ const Testimonial =()=>{
         <SwiperSlide>Slide 4</SwiperSlide>
         <SwiperSlide>Slide 5</SwiperSlide>
         <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
       </Swiper>
     </>
         </div>
