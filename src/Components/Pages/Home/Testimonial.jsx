@@ -10,9 +10,10 @@ import SectionTitle from '../../../assets/images/SectionTitle/SectionTitle';
 const Testimonial =()=>{
 
     return (
-        <div>
+        <div >
             <SectionTitle subTitle={'What Our Clients Say'} title={'TESTIMONIALS'}/>
-             <>
+            <div className='py-6 md:py-16 px-12 md:px-28'>
+            <>
       <Swiper
         cssMode={true}
         navigation={true}
@@ -30,6 +31,7 @@ const Testimonial =()=>{
         <SwiperSlide>Slide 6</SwiperSlide>
       </Swiper>
     </>
+            </div>
         </div>
     )
 };
